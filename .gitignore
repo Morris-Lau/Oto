@@ -1,0 +1,43 @@
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.netrc
+.omc/
+.omx/
+.claude/
+
+# Xcode build output inside the app folder (e.g. local -derivedDataPath)
+Oto.xcodeproj/build/
+
+# Agent context files
+CLAUDE.md
+
+# Local identity/signing overrides
+Config/Local.xcconfig
+
+# Merge / editor backups
+*.pbxproj.backup
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/.env
+fastlane/*.p8
+
+# Signing / keys — never commit these
+*.mobileprovision
+*.p12
+AuthKey_*.p8
+
+# Bundler (project-local gems)
+vendor/bundle
+
+# Local archives / IPA output
+/build/
+
+# Local deploy script
+deploy.sh

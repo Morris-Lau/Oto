@@ -1,0 +1,24 @@
+{
+  "originHash" : "b877629bc352944f9fd631fc86508c663d3992550e98c7ab0d38505ea6f95db1",
+  "pins" : [
+    {
+      "identity" : "neteasecloudmusicapi-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8626b8fe628144e051dd9e07180850d253c808f2"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "revision" : "1248465fc4e41ee2fdbe253b8b14d5225b04093b",
+        "version" : "13.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}

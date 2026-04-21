@@ -1,0 +1,8 @@
+// Checked-in defaults for open-source-safe identity values.
+// Copy Config/Local.xcconfig.example to Config/Local.xcconfig to override locally.
+
+APP_BUNDLE_ID = org.example.Oto
+APP_TEST_BUNDLE_ID = org.example.OtoTests
+APPLE_DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

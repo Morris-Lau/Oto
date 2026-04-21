@@ -1,0 +1,5 @@
+// Copy this file to Config/Local.xcconfig and fill in your local signing values.
+
+APP_BUNDLE_ID = com.your-team.Oto
+APP_TEST_BUNDLE_ID = com.your-team.OtoTests
+APPLE_DEVELOPMENT_TEAM = YOURTEAMID

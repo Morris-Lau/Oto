@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+app_identifier(ENV["APP_IDENTIFIER"]) if ENV["APP_IDENTIFIER"]
+team_id(ENV["APPLE_TEAM_ID"]) if ENV["APPLE_TEAM_ID"]
+
+# Optional: used when not using App Store Connect API key (interactive / keychain auth).
+# apple_id("you@example.com")
