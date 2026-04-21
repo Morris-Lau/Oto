@@ -2,7 +2,15 @@
 
 Oto is a SwiftUI iOS music app built around the NetEase Cloud Music ecosystem. The current app includes login-aware discovery, search, album/artist/playlist browsing, background playback, lock-screen controls, and offline downloads.
 
-![Oto app screenshot](media/oto-home.png)
+[简体中文 README](README.zh-CN.md)
+
+## Screenshots
+
+<p align="center">
+  <img src="media/discover-light.png" alt="Oto discover feed with recommendations and mini player" width="30%" />
+  <img src="media/discover-dark.png" alt="Oto full-screen player" width="30%" />
+  <img src="media/lyrics-player.png" alt="Oto full-screen lyrics player" width="30%" />
+</p>
 
 ## Highlights
 
@@ -10,7 +18,6 @@ Oto is a SwiftUI iOS music app built around the NetEase Cloud Music ecosystem. T
 - NetEase-backed discovery and personalized shelves
 - Full-screen now-playing experience with lyrics, queue management, and transport controls
 - Offline download flow with persisted playback/download state
-- Fastlane lanes for internal TestFlight distribution
 
 ## Tech Stack
 
