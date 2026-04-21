@@ -1233,6 +1233,7 @@
       }
     },
     "now_playing_translate" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
