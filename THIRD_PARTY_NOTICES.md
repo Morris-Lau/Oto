@@ -6,6 +6,7 @@ This project uses third-party open-source software.
 
 - Repository: https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift
 - License: MIT
+- Usage: NetEase Cloud Music API integration used by Oto
 
 ## Nuke
 

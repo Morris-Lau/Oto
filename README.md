@@ -17,7 +17,7 @@ Oto is a SwiftUI iOS music app built around the NetEase Cloud Music ecosystem. T
 - Xcode project: `Oto.xcodeproj`
 - iOS deployment target: 26.0
 - Dependencies:
-  - `NeteaseCloudMusicAPI-Swift`
+  - [`NeteaseCloudMusicAPI-Swift`](https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift)
   - `Nuke`
 
 ## Project Layout
@@ -119,3 +119,8 @@ This project is licensed under the [MIT License](LICENSE).
 ## Third-Party Software
 
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency license notes.
+
+## Acknowledgements
+
+- [`Lincb522/NeteaseCloudMusicAPI-Swift`](https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift) for the NetEase Cloud Music Swift SDK used by this app
+- [`kean/Nuke`](https://github.com/kean/Nuke) for image loading and caching
