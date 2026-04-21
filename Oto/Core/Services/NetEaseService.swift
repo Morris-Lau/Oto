@@ -158,11 +158,10 @@ actor NetEaseService: NetEaseServiceProtocol {
     }
 
     /// 获取每日推荐歌曲（接口返回多少首就拉多少首，不做截断）。
-    /// - Returns: 解析后的 Track 数组（已填充 audioURL）
+    /// - Returns: 解析后的 Track 数组（audioURL 为空，播放时由 PlayerService 按需补全）
     func fetchDailyRecommendations() async throws -> [Track] {
         let response = try await client.recommendSongs()
-        let tracks = parseRecommendSongsResponse(response)
-        return try await fillAudioURLs(for: tracks)
+        return parseRecommendSongsResponse(response)
     }
 
     func fetchRecommendedPlaylists(limit: Int = 6) async throws -> [PlaylistSummary] {
@@ -200,13 +199,12 @@ actor NetEaseService: NetEaseServiceProtocol {
                 seen.insert(track.id)
                 collected.append(track)
                 if collected.count >= limit {
-                    let trimmed = tracksTrimmedToEvenCount(Array(collected.prefix(limit)))
-                    return try await fillAudioURLs(for: trimmed)
+                    return tracksTrimmedToEvenCount(Array(collected.prefix(limit)))
                 }
             }
         }
 
-        return try await fillAudioURLs(for: tracksTrimmedToEvenCount(collected))
+        return tracksTrimmedToEvenCount(collected)
     }
 
     /// 两排横向展示时避免单行多一个；仅在大于 1 且奇数时去掉最后一首（剩 1 首仍展示）。
@@ -227,7 +225,7 @@ actor NetEaseService: NetEaseServiceProtocol {
     func fetchPersonalFM(limit: Int = 3) async throws -> [Track] {
         let response = try await client.personalFm()
         let payloads = extractPersonalFMSongPayloads(from: response.body)
-        return try await fillAudioURLs(for: Array(payloads.compactMap(parseSong).prefix(limit)))
+        return Array(payloads.compactMap(parseSong).prefix(limit))
     }
 
     func fmTrash(trackID: Int) async throws {
